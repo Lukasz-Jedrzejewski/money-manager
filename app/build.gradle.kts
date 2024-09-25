@@ -5,6 +5,8 @@ plugins {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    runtimeOnly("org.postgresql:postgresql")
+    runtimeOnly(project(":gui-api"))
 }
 
 application {

@@ -10,5 +10,4 @@ dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind")
     implementation("jakarta.annotation:jakarta.annotation-api")
     testImplementation("org.springframework:spring-test")
-    implementation("io.vavr:vavr:${vavrVersion}")
 }
