@@ -4,6 +4,4 @@ plugins {
 
 rootProject.name = "money-manager"
 include("app")
-
-
-
+include("gui-api")
