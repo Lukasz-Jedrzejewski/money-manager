@@ -1,0 +1,19 @@
+services:
+  Postgres:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 4y7sV96vA9wv46VR
+      POSTGRES_DB: money_manager
+    volumes:
+      - money_manager_data:/var/lib/postgresql/data
+  Flyway:
+    image: money-manager-db-migrations
+    build: database-migrations
+    command: -url=jdbc:postgresql://Postgres:5432/money_manager -schemas=public -user=postgres -password=4y7sV96vA9wv46VR -connectRetries=60 migrate
+
+volumes:
+  money_manager_data:
+
