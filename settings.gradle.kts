@@ -5,3 +5,4 @@ plugins {
 rootProject.name = "money-manager"
 include("app")
 include("gui-api")
+include("data-access:transaction-type")
