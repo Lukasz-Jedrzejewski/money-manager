@@ -18,6 +18,7 @@ java {
 dependencies {
     implementation(platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}"))
     implementation("org.slf4j:slf4j-api")
+    implementation("org.mapstruct:mapstruct:1.6.3")
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.mockito:mockito-junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")

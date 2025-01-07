@@ -9,6 +9,7 @@ dependencies {
     runtimeOnly("org.postgresql:postgresql")
     runtimeOnly(project(":gui-api"))
     runtimeOnly(project(":data-access:transaction-type"))
+    runtimeOnly(project(":transaction-type:service"))
 }
 
 application {
