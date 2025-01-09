@@ -18,12 +18,14 @@ java {
 dependencies {
     implementation(platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}"))
     implementation("org.slf4j:slf4j-api")
-    implementation("org.mapstruct:mapstruct:1.6.3")
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.mockito:mockito-junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    compileOnly("org.projectlombok:lombok:${lombokVersion}")
+    implementation("org.projectlombok:lombok:${lombokVersion}")
     annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+    implementation("org.projectlombok:lombok-mapstruct-binding:0.2.0")
+    implementation("org.mapstruct:mapstruct:${mapstructVersion}")
+    implementation("org.mapstruct:mapstruct-processor:${mapstructVersion}")
 }
 
 tasks.named<Test>("test") {
