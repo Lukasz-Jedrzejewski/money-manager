@@ -10,9 +10,4 @@ public class TransactionTypeGuiService {
     public TransactionTypeGuiService(TransactionTypeDtoMapper mapper) {
         this.mapper = mapper;
     }
-
-    public void test(TransactionTypeDto dto) {
-        var domain = mapper.toDomain(dto);
-        System.out.println(domain.toString());
-    }
 }
