@@ -6,6 +6,5 @@ import org.mapstruct.Mapper;
 @Mapper(componentModel = "spring")
 public interface TransactionTypeDtoMapper {
     TransactionTypeDto toDto(TransactionType transactionType);
-
     TransactionType toDomain(TransactionTypeDto transactionTypeDto);
 }

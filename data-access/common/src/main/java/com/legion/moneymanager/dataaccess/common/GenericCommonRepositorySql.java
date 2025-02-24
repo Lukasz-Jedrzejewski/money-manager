@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 import java.util.Optional;
 
-abstract class GenericCommonRepositorySql<DOMAIN_INSTANCE, DOMAIN_INSTANCE_ID, SQL_INSTANCE> implements GenericCrudRepository<DOMAIN_INSTANCE, DOMAIN_INSTANCE_ID> {
+public abstract class GenericCommonRepositorySql<DOMAIN_INSTANCE, DOMAIN_INSTANCE_ID, SQL_INSTANCE> implements GenericCrudRepository<DOMAIN_INSTANCE, DOMAIN_INSTANCE_ID> {
     protected final GenericDomainSqlMapper<DOMAIN_INSTANCE, SQL_INSTANCE> domainSqlMapper;
 
     protected final JpaRepository<SQL_INSTANCE, DOMAIN_INSTANCE_ID> jpaRepository;
